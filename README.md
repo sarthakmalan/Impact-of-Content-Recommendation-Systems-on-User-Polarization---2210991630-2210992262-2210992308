@@ -1,7 +1,7 @@
 # Research-Paper
 # 📄 Impact of Content Recommendation Systems on User Polarization
 
-## 🧠 Overview
+##  Overview
 
 This research paper explores how content recommendation systems influence user polarization on social media platforms. With the rise of personalized content feeds, recommendation algorithms have become central to shaping user experiences. While these systems improve engagement, they can also lead to unintended consequences such as echo chambers and ideological polarization.
 
@@ -9,7 +9,7 @@ This study compares **engagement-based** and **diversity-based** recommendation 
 
 ---
 
-## 👨‍💻 Authors
+##  Authors
 
 * **Harshdeep Singh**
 * **Sarthak Malan**
@@ -22,7 +22,7 @@ Chitkara University, Patiala, India
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 * Analyze the impact of recommendation systems on user polarization
 * Compare engagement-based vs diversity-based recommendation models
@@ -31,7 +31,7 @@ Chitkara University, Patiala, India
 
 ---
 
-## ⚙️ Methodology
+##  Methodology
 
 The study follows a structured data-driven approach:
 
@@ -61,7 +61,7 @@ The study follows a structured data-driven approach:
 
 ---
 
-## 📊 Results
+##  Results
 
 | Model            | Sentiment Variance | Average Sentiment |
 | ---------------- | ------------------ | ----------------- |
@@ -77,7 +77,7 @@ The study follows a structured data-driven approach:
 ---
 
 
-## 💡 Key Concepts
+##  Key Concepts
 
 * Content Recommendation Systems
 * User Polarization
@@ -88,7 +88,7 @@ The study follows a structured data-driven approach:
 
 ---
 
-## 📚 Citation
+##  Citation
 
 If you use this work, please cite:
 
@@ -97,7 +97,7 @@ Harshdeep Singh, Sarthak Malan, Shivam Dubey, Dr. Shikha Tuteja,
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 * Use larger and more diverse datasets
 * Apply advanced machine learning models
@@ -105,13 +105,13 @@ Harshdeep Singh, Sarthak Malan, Shivam Dubey, Dr. Shikha Tuteja,
 
 ---
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 We would like to thank Chitkara University and our mentors for their guidance and support throughout this research.
 
 ---
 
-## 📬 Contact
+##  Contact
 
 For any queries or collaboration:
 
