@@ -1,13 +1,5 @@
 # Research-Paper
-# 📄 Impact of Content Recommendation Systems on User Polarization
-
-##  Overview
-
-This research paper explores how content recommendation systems influence user polarization on social media platforms. With the rise of personalized content feeds, recommendation algorithms have become central to shaping user experiences. While these systems improve engagement, they can also lead to unintended consequences such as echo chambers and ideological polarization.
-
-This study compares **engagement-based** and **diversity-based** recommendation strategies to evaluate their impact on user opinions and behavior.
-
----
+#  Impact of Content Recommendation Systems on User Polarization
 
 ##  Authors
 
@@ -21,89 +13,218 @@ Chitkara University Institute of Engineering and Technology
 Chitkara University, Patiala, India
 
 ---
-
-##  Objectives
-
-* Analyze the impact of recommendation systems on user polarization
-* Compare engagement-based vs diversity-based recommendation models
-* Measure the formation of echo chambers
-* Evaluate how content exposure influences user sentiment
-
----
-
-##  Methodology
-
-The study follows a structured data-driven approach:
-
-1. **Data Collection**
-
-   * Dataset sourced from platforms like Reddit and Twitter
-   * Includes ~50,000 posts and ~10,000 users
-
-2. **Data Preprocessing**
-
-   * Removal of noise (URLs, special characters, etc.)
-   * Text normalization (lowercasing, tokenization, stopword removal)
-
-3. **Sentiment Analysis**
-
-   * Classification of posts into positive, negative, or neutral sentiment
-
-4. **Recommendation Simulation**
-
-   * **Engagement-Based Model**: Prioritizes highly interacted content
-   * **Diversity-Based Model**: Promotes varied and random content exposure
-
-5. **Polarization Metrics**
-
-   * Sentiment variance
-   * Average sentiment score
-
----
-
-##  Results
-
-| Model            | Sentiment Variance | Average Sentiment |
-| ---------------- | ------------------ | ----------------- |
-| Engagement-Based | 0.65               | 0.20              |
-| Diversity-Based  | 0.38               | 0.10              |
-
-### Key Findings:
-
-* Engagement-based systems increase polarization and reinforce echo chambers
-* Diversity-based systems reduce polarization by exposing users to varied viewpoints
-* A balance between engagement and diversity is essential for responsible system design
-
----
+##### **Project Overview**
 
 
-##  Key Concepts
 
-* Content Recommendation Systems
-* User Polarization
-* Echo Chambers
-* Sentiment Analysis
-* Machine Learning
-* Social Network Analysis
+This project analyzes how different recommendation strategies affect user polarization on social media, based on our research paper “Impact of Content Recommendation Systems on User Polarization.”
 
----
 
-##  Citation
 
-If you use this work, please cite:
+We simulate two types of recommendation systems:
 
-Harshdeep Singh, Sarthak Malan, Shivam Dubey, Dr. Shikha Tuteja,
-*"Impact of Content Recommendation Systems on User Polarization"*, 2026.
 
----
 
-##  Future Work
+Engagement-Based Model → prioritizes popular content
 
-* Use larger and more diverse datasets
-* Apply advanced machine learning models
-* Improve recommendation strategies for better balance between engagement and diversity
+Diversity-Based Model → ensures exposure to mixed viewpoints
 
----
+
+
+We then measure their impact using:
+
+
+
+Sentiment Variance → indicates polarization
+
+Average Sentiment → shows overall opinion direction.
+
+
+
+##### **Code Explanation** (analysis.py)
+
+
+
+The script performs the following steps:
+
+
+
+###### 1\. Data Loading
+
+Loads the Reddit dataset (Reddit\_Data.csv)
+
+Uses the first 1000 rows for faster execution.
+
+
+
+###### 2\. Data Preparation
+
+Removes missing values
+
+Uses the category column as sentiment:
+
+1 → Positive
+
+0 → Neutral
+
+\-1 → Negative
+
+
+
+###### 3\. Engagement-Based Model
+
+
+
+reddit\['engagement'] = reddit.index
+
+engagement\_df = reddit.sort\_values(by='engagement', ascending=False).head(100)
+
+
+
+Simulates engagement using ranking (top posts)
+
+Selects top 100 posts (high engagement)
+
+Calculates:
+
+\- Variance → measures polarization
+
+\- Average sentiment
+
+
+
+**Insight**:
+
+Higher variance = users see similar content → echo chambers
+
+
+
+###### 4\. Diversity-Based Model
+
+
+
+neutral = reddit\[reddit\['sentiment'] == 0].sample(50)
+
+positive = reddit\[reddit\['sentiment'] == 1].sample(30)
+
+negative = reddit\[reddit\['sentiment'] == -1].sample(20)
+
+
+
+Samples a balanced mix of sentiments
+
+Combines them into one dataset
+
+Calculates:
+
+\- Variance
+
+\- Average sentiment
+
+
+
+**Insight**:
+
+Lower variance = users see mixed viewpoints → reduced polarization
+
+
+
+###### 5\. Visualization
+
+A bar chart compares the variance of both models
+
+Clearly shows polarization difference.
+
+
+
+
+
+##### **Results Interpretation**
+
+
+
+Engagement-Based Model
+
+Higher variance → more polarization
+
+Reinforces existing beliefs (echo chambers)
+
+
+
+Diversity-Based Model
+
+Lower variance → less polarization
+
+Encourages exposure to different opinions
+
+
+
+
+
+##### **Datasets Used**
+
+
+
+###### 1\. Reddit\_Data.csv
+
+Source: Kaggle
+
+Contains Reddit comments with pre-labeled sentiment (category)
+
+Used as the primary dataset for analysis.
+
+
+
+###### 2\. Twitter\_Data.csv
+
+Source: Kaggle
+
+Included for extension/future work
+
+It can be used to perform similar analysis on Twitter data.
+
+
+
+##### **How to Run**
+
+
+
+1\. Install dependencies
+
+pip install pandas matplotlib
+
+
+
+2\. Run the script
+
+python analysis.py
+
+
+
+##### **Output**
+
+
+
+The program will:
+
+
+
+Print the variance and average sentiment for both models
+
+Display a bar chart comparing polarization.
+
+
+
+##### **Conclusion**
+
+
+
+This project demonstrates that:
+
+
+
+Engagement-based recommendation systems increase polarization, while diversity-based systems help reduce it by exposing users to varied viewpoints.
+
 
 ##  Acknowledgements
 
