@@ -3,10 +3,10 @@
 
 ##  Authors
 
-* **Harshdeep Singh**
-* **Sarthak Malan**
-* **Shivam Dubey**
-* **Dr. Shikha Tuteja**
+* **Harshdeep Singh - 2210991630**
+* **Sarthak Malan - 2210992262**
+* **Shivam Dubey - 2210992308**
+* **Dr. Shikha Tuteja - Associate Professor**
 
 **Department of Computer Science & Engineering**
 Chitkara University Institute of Engineering and Technology
