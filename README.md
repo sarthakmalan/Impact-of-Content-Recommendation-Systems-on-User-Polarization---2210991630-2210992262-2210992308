@@ -40,7 +40,6 @@ We simulate and compare two types of recommendation systems:
 ### 1.  Data Loading
 
 * Loads dataset: `Reddit_Data.csv`
-* Uses first **1000 rows** for faster computation
 
 ### 2.  Data Preparation
 
