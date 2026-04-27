@@ -7,12 +7,12 @@
 * **Sarthak Malan - 2210992262**
 * **Shivam Dubey - 2210992308**
 * **Dr. Shikha Tuteja - Associate Professor**
-  
-## Paper submitted to ICST 2026 (SCRS) via CMT, under review (Paper ID: 69)
 
 **Department of Computer Science & Engineering**
 Chitkara University Institute of Engineering and Technology
 Chitkara University, Patiala, India
+
+## Paper submitted to ICST 2026 (SCRS) via CMT, under review (Paper ID: 69)
 
 ---
 
